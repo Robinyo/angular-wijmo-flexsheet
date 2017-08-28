@@ -23,6 +23,7 @@
     "@angular/router": "^4.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
+    "wijmo": "file:///home/rob/WebStorm-2017/workspace/products/wijmo-5-enterprise/NpmImages/wijmo-amd-min",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {

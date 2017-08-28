@@ -1,0 +1,294 @@
+﻿/**
+ * ribbon bars style settings
+ */
+.ribbon-container {
+	margin: 0px;
+	padding: 1px;
+	font-size: 11px;
+	border: 1px solid #cccccc;
+	border-bottom-width: 2px;
+}
+
+	.ribbon-container > .panel {
+		float: left;
+		margin: 1px;
+		background-color: transparent;
+		height: 82px;
+	}
+
+		.ribbon-container > .panel > .panel-body {
+			height: 77.5%;
+		}
+
+		.ribbon-container > .panel > .panel-body,
+		.ribbon-container > .panel > .panel-footer {
+			padding: 1px;
+		}
+
+.panel-body > .btn-group > .btn,
+.panel-body > .btn-group > .btn-group-vertical,
+.panel-body > .btn-group-vertical > .btn-group-h {
+	margin: 1px;
+}
+
+.ribbon-container .btn-default {
+	background-color: transparent;
+	padding: 0px;
+}
+
+.no-border {
+	border-color: transparent;
+}
+
+.ribbon-container .btn-default:hover {
+	color: #333;
+	background-color: #CCFFFF;
+	border-color: #adadad;
+}
+
+.ribbon-container .input-sm {
+	padding: 0px;
+	height: auto;
+}
+
+.ribbon-container .checkbox {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.btn-default > .text {
+	font-size: 11px;
+}
+
+.btn-large > span {
+	display: block;
+}
+
+	.btn-large > span.ribbon-icon {
+		width: 32px;
+		height: 32px;
+	}
+
+.btn-group-vertical > .btn-group-h > .btn {
+	display: block;
+	float: left;
+	width: auto;
+}
+
+.btn-group-h > .btn > span.text {
+	display: none;
+}
+
+.btn-small > span {
+	display: inline;
+	float: left;
+}
+
+	.btn-small > span.ribbon-icon {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+	}
+
+.ribbon-container label > input[type=checkbox] {
+	margin-top: 0px;
+}
+
+.glyphicon.flip {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+}
+
+
+
+
+/* bar icons */
+.underline {
+	background-image: url('../resources/ribbon/Underline_small.png');
+}
+
+input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+/* Update Begin */
+
+.row.title {
+	padding: 10px 10px 10px 15px;
+}
+
+row grid {
+	margin-top: 0 !important;
+}
+
+.row.ribbon-container {
+	padding: 0;
+	border-bottom-width: 1px;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+.ribbon-container .btn-default {
+	background-color: transparent;
+	padding: 5px 20px;
+	font-size: 14px;
+	border-radius: 0;
+	margin: 0;
+}
+
+.ribbon-container .btn-group-vertical .btn-default {
+	padding: 5px 10px;
+}
+
+.ribbon-container .btn-group-vertical {
+	margin: 5px 15px;
+}
+
+.ribbon-container .input-sm:first-child {
+	width: 70%;
+}
+
+.ribbon-container .input-sm {
+	display: inline-block;
+	width: 25%;
+	height: 25px;
+	padding: 0 0 0 4px;
+	margin-bottom: 2px;
+	margin-top: 3px;
+	background: #fff;
+}
+
+.ribbon-container .btn-default:hover {
+	box-shadow: none;
+}
+
+.ribbon-container .btn-large:hover {
+	border-color: transparent;
+}
+
+.panel-body > .btn-group > .btn {
+	margin: 0;
+}
+
+.ribbon-container > .panel > .panel-body,
+.ribbon-container > .panel > .panel-footer {
+	padding: 0;
+}
+
+.ribbon-container .btn-large .glyphicon {
+	font-size: 24px;
+	line-height: normal;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+.ribbon-container .btn-small {
+	margin-top: 2px;
+}
+
+	.ribbon-container .btn-small .glyphicon {
+		font-size: 12px;
+		line-height: normal;
+		height: 14px;
+		margin-bottom: 2px;
+	}
+
+.ribbon-container .glyphicon.glyphicon-open, .ribbon-container .glyphicon.glyphicon-save, .ribbon-container .glyphicon.glyphicon-file {
+	padding-top: 6px;
+}
+
+.glyphicon.glyphicon-text-color, .glyphicon.glyphicon-text-background {
+	margin: 0;
+	padding: 0;
+}
+
+span.underline.ribbon-icon {
+	opacity: .5;
+}
+
+.btn-small > span.ribbon-icon {
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.ribbon-container > .panel {
+	height: 101px;
+}
+
+.ribbon-container .panel-default {
+	margin: 0 0px 0 0;
+	box-shadow: none;
+	border-radius: 0;
+	border: 0;
+}
+
+.ribbon-container .panel-footer {
+	border: 0;
+	padding: 0 0;
+	border-radius: 0;
+}
+
+.ribbon-container > .panel > .panel-body, .ribbon-container .btn-large {
+	height: 75px;
+}
+
+.ribbon-container > .panel > .panel-footer {
+	padding: 5px 10px;
+}
+
+.wj-alt:not(.wj-header):not(.wj-group):not(.wj-state-selected):not(.wj-state-multi-selected):not(.wj-frozen) {
+	/* Alternate grid cell color */
+	background: transparent;
+}
+
+/* Colors */
+
+.ribbon-container button {
+	outline: none !important;
+}
+
+.row.ribbon-container {
+	border-color: #d2d2d4;
+	background: #e4e5e8;
+}
+
+.ribbon-container .panel-default {
+	border-right: 1px solid #d8d8da;
+	background: #e4e5e8;
+	color: #656569;
+}
+
+.ribbon-container .btn-default:hover, .ribbon-container .btn-default:focus {
+	background-color: #dcdde0;
+}
+
+.ribbon-container .panel-footer {
+	background: #dddee2;
+	border-top: 1px solid #d2d2d4;
+}
+
+.ribbon-container .btn-small, .ribbon-container .btn-small:hover {
+	border-color: #ceced0;
+}
+
+	.ribbon-container .btn-large .glyphicon, .ribbon-container .btn-small .glyphicon {
+		color: #727275;
+	}
+
+.btn-default > .text, .ribbon-container .panel-footer {
+	color: #656569;
+	font-weight: normal;
+}
+
+/* Update End */

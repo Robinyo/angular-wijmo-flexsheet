@@ -1,0 +1,14 @@
+﻿.bad-style{
+	background-color: #f877c6 !important;
+	color: #c10000;
+}
+
+.good-style{
+	background-color: #00ff90 !important;
+	color: #4f8909;
+}
+
+.neutral-style{
+	background-color: #f8cb7a !important;
+	color: #7f5a09;
+}

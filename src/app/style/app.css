@@ -1,0 +1,205 @@
+﻿body {
+	background-color: #f8f8f8;
+	font-family: -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: -apple-system-font, 'Segoe UI Light', 'Segoe UI', 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.header {
+	background-color: #283442;
+	margin-bottom: 14px;
+	padding: 12px 0px;
+	color: #c9d8ea;
+}
+
+	.header h1 {
+		font-size: 40px;
+		line-height: 1;
+		color: #fff;
+	}
+
+	.header img {
+		float: left;
+		margin: 0 10px 5px 0;
+	}
+
+
+h2 a:hover {
+	text-decoration: none;
+}
+
+a.sampleButton {
+	background-color: #283442;
+	display: inline-block;
+	padding: 20px 40px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 20px;
+}
+
+	a.sampleButton:hover {
+		background-color: #38495c;
+		color: #fff;
+		text-decoration: none;
+	}
+
+footer {
+	margin: 100px 0 0 0;
+	border-top: 1px solid #ddd;
+	padding: 20px 0 0 0;
+}
+
+html, body, .excelbook {
+	margin: 0px;
+	height: 100%;
+}
+
+	.excelbook .row {
+		margin: 0px;
+	}
+
+
+/**
+ * top boxes style settings
+ */
+.top-boxes {
+	background-color: #fff;
+	height: 55px;
+	line-height: 25px;
+	padding: 15px 0;
+}
+
+	.top-boxes input {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		height: 25px;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.top-boxes div {
+		height: 100%;
+	}
+
+	.top-boxes .position {
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		margin-left: 15px;
+		font-weight: bold;
+	}
+
+.fn-label {
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	border: 1px solid #ccc;
+	margin-left: -15px;
+	background: #eee;
+}
+
+.fn-box {
+	padding: 0px;
+}
+
+	.fn-box > input.form-control {
+		border-radius: 0px;
+	}
+
+/**
+ * the status bar style settings
+ */
+.status {
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	border-bottom: 1px solid #000000;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+span.firstsheet {
+	background-image: url('../resources/sheets/FirstSheet.png');
+}
+
+span.previoussheet {
+	background-image: url('../resources/sheets/PreviousSheet.png');
+}
+
+span.nextsheet {
+	background-image: url('../resources/sheets/NextSheet.png');
+}
+
+span.lastsheet {
+	background-image: url('../resources/sheets/LastSheet.png');
+}
+
+span.addlevel {
+	background-image: url('../resources/sort/AddLevel.png');
+}
+
+span.deletelevel {
+	background-image: url('../resources/sort/DeleteLevel.png');
+}
+
+span.copylevel {
+	background-image: url('../resources/sort/CopyLevel.png');
+}
+
+span.moveup {
+	background-image: url('../resources/sort/MoveUp.png');
+}
+
+span.movedown {
+	background-image: url('../resources/sort/MoveDown.png');
+}
+
+div.borderspace {
+	float: left;
+	border-top: 1px solid #0094ff;
+}
+
+/**
+ * the style of FlexSheet
+ */
+div.wj-header > div.dropdown {
+	visibility: hidden;
+	float: right;
+}
+
+div.wj-header:hover > div.dropdown {
+	visibility: visible;
+}
+
+div.dropdown:hover {
+	background-color: #ccffff;
+}
+
+.modal-dialog {
+	position: absolute;
+	left: 50%;
+	margin-left: -312px;
+	height: 500px;
+	top: 50%;
+	margin-top: -250px;
+}
+
+.modal-body .btn-default .glyphicon {
+	color: #666;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.flexSheet {
+	height: 600px;
+	border: 2px solid #e0e0e0;
+	margin: 6px;
+}

@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/* Bootstrap 4 CSS
+@import './app/style/vendor/bootstrap/4.0.0-beta/css/bootstrap.min.css';
+*/
+
+/* Wijmo 5 CSS */
+@import './app/style/vendor/wijmo/5.20172.334/wijmo.min.css';
+@import './app/style/vendor/wijmo/5.20172.334/wijmo.theme.office.min.css';
+
+/* ExcelBook CSS */
+@import './app/style/app.css';
+@import './app/style/ribbon.css';
+@import './app/style/cellStyles.css';
