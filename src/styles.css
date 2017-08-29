@@ -9,15 +9,11 @@
 @import './app/styles/vendor/wijmo/5.20172.334/css/wijmo.theme.office.min.css';
 
 /*
-
- Styles (and resources) from the wijmo-5-enterprise TS ExcelBook sample
+ Styles and resources from the wijmo-5-enterprise ExcelBook sample
 
  See:
  - /wijmo-5-enterprise/Samples/TS/Angular2/ExcelBook/ExcelBook/styles
  - /wijmo-5-enterprise/Samples/TS/Angular/ExcelBook/ExcelBook/resources
-
- Note: The styles utilise Bootstrap 3 e.g., glyphicons
-
 */
 
 /* ExcelBook CSS */

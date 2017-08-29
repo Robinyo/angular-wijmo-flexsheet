@@ -11,13 +11,13 @@ export class AppComponent implements OnInit {
   // public worksheetHeight = 0;
 
   ngOnInit() {
-    const navbarHeight = document.getElementById('ribbon-tabs-container').clientHeight;
-    this.worksheetHeight = window.innerHeight - navbarHeight;
+    const ribbonHeight = document.getElementById('ribbon-tabs-container').clientHeight;
+    this.worksheetHeight = window.innerHeight - ribbonHeight;
   }
 
   onResize(event) {
-    const navbarHeight = document.getElementById('ribbon-tabs-container').clientHeight;
-    this.worksheetHeight = event.target.innerHeight - navbarHeight;
+    const ribbonHeight = document.getElementById('ribbon-tabs-container').clientHeight;
+    this.worksheetHeight = event.target.innerHeight - ribbonHeight;
   }
 }
 
