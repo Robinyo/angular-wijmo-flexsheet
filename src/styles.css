@@ -1,16 +1,26 @@
-/* Bootstrap 4 CSS
-@import './app/style/vendor/bootstrap/4.0.0-beta/css/bootstrap.min.css';
-*/
+/* Font Awesome 4.7.0 CSS */
+@import './app/styles/vendor/font-awesome/4.7.0/css/font-awesome.min.css';
 
-/* Font Awesome 4 CSS
-@import './app/style/vendor/font-awesome/4.7.0/css/font-awesome.min.css';
-*/
+/* Bootstrap 3.3.7 CSS */
+@import './app/styles/vendor/bootstrap/3.3.7/css/bootstrap.min.css';
 
 /* Wijmo 5 CSS */
-@import './app/style/vendor/wijmo/5.20172.334/wijmo.min.css';
-@import './app/style/vendor/wijmo/5.20172.334/wijmo.theme.office.min.css';
+@import './app/styles/vendor/wijmo/5.20172.334/css/wijmo.min.css';
+@import './app/styles/vendor/wijmo/5.20172.334/css/wijmo.theme.office.min.css';
+
+/*
+
+ Styles (and resources) from the wijmo-5-enterprise TS ExcelBook sample
+
+ See:
+ - /wijmo-5-enterprise/Samples/TS/Angular2/ExcelBook/ExcelBook/styles
+ - /wijmo-5-enterprise/Samples/TS/Angular/ExcelBook/ExcelBook/resources
+
+ Note: The styles utilise Bootstrap 3 e.g., glyphicons
+
+*/
 
 /* ExcelBook CSS */
-@import './app/style/app.css';
-@import './app/style/ribbon.css';
-@import './app/style/cellStyles.css';
+@import './app/styles/app.css';
+@import './app/styles/ribbon.css';
+@import './app/styles/cellStyles.css';

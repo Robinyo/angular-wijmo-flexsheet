@@ -2,7 +2,7 @@
  * ribbon bars style settings
  */
 .ribbon-container {
-	margin: 0px;
+	margin: 0;
 	padding: 1px;
 	font-size: 11px;
 	border: 1px solid #cccccc;
@@ -33,7 +33,7 @@
 
 .ribbon-container .btn-default {
 	background-color: transparent;
-	padding: 0px;
+	padding: 0;
 }
 
 .no-border {
@@ -47,13 +47,13 @@
 }
 
 .ribbon-container .input-sm {
-	padding: 0px;
+	padding: 0;
 	height: auto;
 }
 
 .ribbon-container .checkbox {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .btn-default > .text {
@@ -91,7 +91,7 @@
 	}
 
 .ribbon-container label > input[type=checkbox] {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 .glyphicon.flip {
@@ -128,7 +128,7 @@ input.upload {
 	padding: 10px 10px 10px 15px;
 }
 
-row grid {
+.row .grid {
 	margin-top: 0 !important;
 }
 
@@ -189,7 +189,7 @@ row grid {
 .ribbon-container .btn-large .glyphicon {
 	font-size: 24px;
 	line-height: normal;
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 8px;
 }
 
@@ -227,7 +227,7 @@ span.underline.ribbon-icon {
 }
 
 .ribbon-container .panel-default {
-	margin: 0 0px 0 0;
+	margin: 0 0 0 0;
 	box-shadow: none;
 	border-radius: 0;
 	border: 0;

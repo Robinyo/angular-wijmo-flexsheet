@@ -1,0 +1,186 @@
+<div class="row ribbon-container">
+
+  <!-- File Panel -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="btn-group">
+        <div class="btn btn-default btn-large no-border">
+          <span class="glyphicon glyphicon-open"></span>
+          <span class="text">Load</span>
+        </div>
+        <button class="btn btn-default btn-large no-border">
+          <span class="glyphicon glyphicon-save"></span>
+          <span class="text">Save</span>
+        </button>
+        <button class="btn btn-default btn-large no-border">
+          <span class="glyphicon glyphicon-file"></span>
+          <span class="text">New</span>
+        </button>
+      </div>
+    </div>
+    <div class="panel-footer text-center">File</div>
+  </div>
+
+  <!-- Undo / Redo Panel -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="btn-group btn-group-h">
+        <button type="button" class="btn btn-default btn-small" title="Undo" [disabled]="!(undoStack && undoStack.canUndo)">
+          <span class="glyphicon glyphicon-share-alt flip"></span>
+          <span class="text">Undo</span>
+        </button>
+        <button type="button" class="btn btn-default btn-small" title="Redo" [disabled]="!(undoStack && undoStack.canRedo)">
+          <span class="glyphicon glyphicon-share-alt"></span>
+          <span class="text">Redo</span>
+        </button>
+      </div>
+    </div>
+    <div class="panel-footer text-center">Undo / Redo</div>
+  </div>
+
+  <!-- Font Panel -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="btn-group-vertical">
+        <wj-combo-box #cboFontName
+                      style="width:120px"
+                      [itemsSource]=""
+                      [selectedIndex]="10"
+                      [displayMemberPath]="'name'"
+                      [selectedValuePath]="'value'"
+                      [isEditable]="false"
+        >
+        </wj-combo-box>
+        <wj-combo-box #cboFontSize
+                      style="width:60px"
+                      [itemsSource]=""
+                      [selectedIndex]="5"
+                      [displayMemberPath]="'name'"
+                      [selectedValuePath]="'value'"
+                      [isEditable]="false"
+        >
+        </wj-combo-box>
+        <div class="btn-group btn-group-h">
+          <button type="button" class="btn btn-default btn-small" title="Bold">
+            <span class="glyphicon glyphicon-bold"></span>
+            <span class="text">Bold</span>
+          </button>
+          <button type="button" class="btn btn-default btn-small" title="Italic">
+            <span class="glyphicon glyphicon-italic"></span>
+            <span class="text">Italic</span>
+          </button>
+          <button type="button" class="btn btn-default btn-small" title="Underline">
+            <span class="underline ribbon-icon"></span>
+            <span class="text">Underline</span>
+          </button>
+          <button type="button" class="btn btn-default btn-small" title="Fill Color">
+            <span class="glyphicon glyphicon-text-background"></span>
+            <span class="text">Fill</span>
+          </button>
+          <button type="button" class="btn btn-default btn-small" title="Font Color">
+            <span class="glyphicon glyphicon-text-color"></span>
+            <span class="text">Font</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer text-center">Font</div>
+  </div>
+
+  <!-- Alignment Panel -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="btn-group-vertical">
+        <div class="btn-group btn-group-h">
+          <button type="button" class="btn btn-default btn-small" title="Left">
+            <span class="glyphicon glyphicon-align-left"></span>
+            <span class="text">Left</span>
+          </button>
+          <button type="button" class="btn btn-default btn-small" title="Center">
+            <span class="glyphicon glyphicon-align-center"></span>
+            <span class="text">Center</span>
+          </button>
+          <button type="button" class="btn btn-default btn-small" title="Right">
+            <span class="glyphicon glyphicon-align-right"></span>
+            <span class="text">Right</span>
+          </button>
+        </div>
+        <div class="btn-group btn-group-h">
+          <button type="button" class="btn btn-default btn-small" title="Merge">
+            <span class="glyphicon glyphicon-th-large"></span>
+            <span class="text">Merge</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer text-center">Alignment</div>
+  </div>
+
+  <!-- View Panel -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default btn-large no-border" (click)="freeze()">
+          <span class="glyphicon glyphicon-list"></span>
+          <span class="text">Unfreeze</span>
+        </button>
+      </div>
+    </div>
+    <div class="panel-footer text-center">View</div>
+  </div>
+
+  <!-- Styles Panel -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <button type="button" class="btn btn-default btn-large no-border" data-toggle="modal" data-target="#excelStyle">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="text">Styles</span>
+      </button>
+    </div>
+    <div class="panel-footer text-center">Styles</div>
+  </div>
+
+  <!-- Editing Panel -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default btn-large no-border" data-toggle="modal" data-target="#excelSort">
+          <span class="glyphicon glyphicon-sort-by-attributes"></span>
+          <span class="text">Sort</span>
+        </button>
+        <button type="button" class="btn btn-default btn-large no-border">
+          <span class="glyphicon glyphicon-filter"></span>
+          <span class="text">Filter</span>
+        </button>
+      </div>
+    </div>
+    <div class="panel-footer text-center">Editing</div>
+  </div>
+
+  <!-- Charts Panel -->
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="btn-group">
+        <button type="button" class="btn btn-default btn-large no-border">
+          <span class="glyphicon glyphicon-stats"></span>
+          <span class="text">Insert Chart</span>
+        </button>
+      </div>
+    </div>
+    <div class="panel-footer text-center">Charts</div>
+  </div>
+
+</div>
+
+<!-- Formula Bar -->
+<div class="row top-boxes">
+  <div class="col-sm-1 col-xs-2 position">A1</div>
+  <div class="col-sm-1 col-xs-2 fn-label text-right">fx</div>
+  <!--
+  <div class="col-sm-10 col-xs-8 fn-box">
+    <input type="text" class="form-control" />
+  </div>
+
+  <div class="col-sm-10 col-xs-8 position-right"></div>
+  -->
+</div>

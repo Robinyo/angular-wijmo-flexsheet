@@ -69,9 +69,9 @@ html, body, .excelbook {
  */
 .top-boxes {
 	background-color: #fff;
-	height: 55px;
+	height: 27px; /* 55px; */
 	line-height: 25px;
-	padding: 15px 0;
+	padding: 1px 0; /* 15px 0; */
 }
 
 	.top-boxes input {
@@ -92,9 +92,19 @@ html, body, .excelbook {
 		border-top: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
 		border-left: 1px solid #ccc;
-		margin-left: 15px;
+		margin-left: 1px; /* 15px; */
 		font-weight: bold;
 	}
+
+  /*
+.top-boxes .position-right {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin-right: 1px;
+  font-weight: bold;
+  }
+  */
 
 .fn-label {
 	border-bottom-left-radius: 20px;

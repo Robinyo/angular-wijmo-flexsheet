@@ -1,1 +1,11 @@
-<app-worksheet></app-worksheet>
+<div class="excelbook" style="position: relative; overflow-y: hidden;" (window:resize)="onResize($event)">
+
+  <div id="ribbon-tabs-container">
+    <app-ribbon></app-ribbon>
+  </div>
+
+  <div id="worksheet-container" [style.height.px]="worksheetHeight">
+    <app-worksheet></app-worksheet>
+  </div>
+
+</div>
