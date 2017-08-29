@@ -25,11 +25,11 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="btn-group btn-group-h">
-        <button type="button" class="btn btn-default btn-small" title="Undo" [disabled]="!(undoStack && undoStack.canUndo)">
+        <button type="button" class="btn btn-default btn-small" title="Undo">
           <span class="glyphicon glyphicon-share-alt flip"></span>
           <span class="text">Undo</span>
         </button>
-        <button type="button" class="btn btn-default btn-small" title="Redo" [disabled]="!(undoStack && undoStack.canRedo)">
+        <button type="button" class="btn btn-default btn-small" title="Redo">
           <span class="glyphicon glyphicon-share-alt"></span>
           <span class="text">Redo</span>
         </button>
@@ -120,7 +120,7 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <div class="btn-group">
-        <button type="button" class="btn btn-default btn-large no-border" (click)="freeze()">
+        <button type="button" class="btn btn-default btn-large no-border">
           <span class="glyphicon glyphicon-list"></span>
           <span class="text">Unfreeze</span>
         </button>
