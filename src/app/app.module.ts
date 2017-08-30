@@ -1,3 +1,5 @@
+import 'script-loader!jszip/dist/jszip.min.js';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

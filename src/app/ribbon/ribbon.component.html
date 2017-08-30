@@ -7,12 +7,15 @@
         <div class="btn btn-default btn-large no-border">
           <span class="glyphicon glyphicon-open"></span>
           <span class="text">Load</span>
+          <input type="file" class="upload"
+          (change)="command({ methodName: 'fileImport', param1: $event })"
+          accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel.sheet.macroEnabled.12" />
         </div>
-        <button class="btn btn-default btn-large no-border">
+        <button class="btn btn-default btn-large no-border" (click)="command({ methodName: 'fileSave' })">
           <span class="glyphicon glyphicon-save"></span>
           <span class="text">Save</span>
         </button>
-        <button class="btn btn-default btn-large no-border">
+        <button class="btn btn-default btn-large no-border" (click)="command({ methodName: 'fileNew' })">
           <span class="glyphicon glyphicon-file"></span>
           <span class="text">New</span>
         </button>

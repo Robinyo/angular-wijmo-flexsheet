@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+import { WorksheetComponent } from './worksheet/worksheet.component';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
+  @ViewChild(WorksheetComponent)
+  private worksheet: WorksheetComponent;
 
   public worksheetHeight: number;
   // public worksheetHeight = 0;
@@ -18,6 +23,23 @@ export class AppComponent implements OnInit {
   onResize(event) {
     const ribbonHeight = document.getElementById('ribbon-tabs-container').clientHeight;
     this.worksheetHeight = event.target.innerHeight - ribbonHeight;
+  }
+
+  ribbonClicked(event) {
+
+    const methodName = event.methodName;
+
+    if (this.worksheet[methodName]) {
+      // if (event.param1) {
+      if (event.hasOwnProperty('param1')) {
+        const param1 = event.param1;
+        console.log('app.component -> action: ' + methodName + ' param1: ' + param1);
+        this.worksheet[methodName](param1);
+      } else {
+        console.log('app.component -> action: ' + methodName);
+        this.worksheet[methodName]();
+      }
+    }
   }
 }
 
