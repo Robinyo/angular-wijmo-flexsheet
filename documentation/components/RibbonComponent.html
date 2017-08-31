@@ -1,0 +1,804 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>angular-wijmo-flexsheet documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">angular-wijmo-flexsheet documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">angular-wijmo-flexsheet documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/RibbonModule.html" >RibbonModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/WorksheetModule.html" >WorksheetModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/RibbonComponent.html"  data-type="entity-link" class="active" >RibbonComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/WorksheetComponent.html" >WorksheetComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/DataService.html" >DataService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">angular-wijmo-flexsheet documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/RibbonModule.html" >RibbonModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/WorksheetModule.html" >WorksheetModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/RibbonComponent.html"  data-type="entity-link" class="active" >RibbonComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/WorksheetComponent.html" >WorksheetComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/DataService.html" >DataService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>RibbonComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/ribbon/ribbon.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-ribbon</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>ribbon.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./ribbon.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                 <a href="#command">command</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ribbonClicked">ribbonClicked</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+    <section>
+        <h3 id="outputs">Outputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="ribbonClicked"></a>
+                            <code>ribbonClicked</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/ribbon/ribbon.component.ts:10</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="command"></a>
+                            <b> command</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>command(action: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/ribbon/ribbon.component.ts:20</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>action</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td><p>The action to process</p>
+    </td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                        <b>Example :</b>
+                                            <div>
+                                                <pre class="line-numbers"><code class="language-html">(click)=&amp;quot;command({ methodName: &amp;#39;fileNew&amp;#39; })&amp;quot;</code></pre>
+                                            </div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import { Component, EventEmitter, Output } from &#x27;@angular/core&#x27;;
+
+@Component({
+  selector: &#x27;app-ribbon&#x27;,
+  templateUrl: &#x27;./ribbon.component.html&#x27;,
+  styleUrls: [&#x27;./ribbon.component.css&#x27;]
+})
+export class RibbonComponent {
+
+  @Output() ribbonClicked &#x3D; new EventEmitter&lt;any&gt;();
+
+  /**
+   * @param {any} action  The action to process
+   *
+   * @example
+   * (click)&#x3D;&quot;command({ methodName: &#x27;fileNew&#x27; })&quot;
+   *
+   * @returns {void}
+   */
+  command(action: any) {
+
+    console.log(&#x27;ribbon.component -&gt; action: &#x27; + action);
+
+    // The Ribbon (child) component emits events when clicked
+    this.ribbonClicked.emit(action);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row ribbon-container&quot;&gt;
+
+  &lt;!-- File Panel --&gt;
+  &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+    &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+      &lt;div class&#x3D;&quot;btn-group&quot;&gt;
+        &lt;div class&#x3D;&quot;btn btn-default btn-large no-border&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-open&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;Load&lt;/span&gt;
+          &lt;input type&#x3D;&quot;file&quot; class&#x3D;&quot;upload&quot;
+          (change)&#x3D;&quot;command({ methodName: &#x27;fileImport&#x27;, param1: $event })&quot;
+          accept&#x3D;&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel.sheet.macroEnabled.12&quot; /&gt;
+        &lt;/div&gt;
+        &lt;button class&#x3D;&quot;btn btn-default btn-large no-border&quot; (click)&#x3D;&quot;command({ methodName: &#x27;fileSave&#x27; })&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-save&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;Save&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class&#x3D;&quot;btn btn-default btn-large no-border&quot; (click)&#x3D;&quot;command({ methodName: &#x27;fileNew&#x27; })&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-file&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;New&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;panel-footer text-center&quot;&gt;File&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Undo / Redo Panel --&gt;
+  &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+    &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+      &lt;div class&#x3D;&quot;btn-group btn-group-h&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Undo&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-share-alt flip&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;Undo&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Redo&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;Redo&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;panel-footer text-center&quot;&gt;Undo / Redo&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Font Panel --&gt;
+  &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+    &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+      &lt;div class&#x3D;&quot;btn-group-vertical&quot;&gt;
+        &lt;wj-combo-box #cboFontName
+                      style&#x3D;&quot;width:120px&quot;
+                      [itemsSource]&#x3D;&quot;&quot;
+                      [selectedIndex]&#x3D;&quot;10&quot;
+                      [displayMemberPath]&#x3D;&quot;&#x27;name&#x27;&quot;
+                      [selectedValuePath]&#x3D;&quot;&#x27;value&#x27;&quot;
+                      [isEditable]&#x3D;&quot;false&quot;
+        &gt;
+        &lt;/wj-combo-box&gt;
+        &lt;wj-combo-box #cboFontSize
+                      style&#x3D;&quot;width:60px&quot;
+                      [itemsSource]&#x3D;&quot;&quot;
+                      [selectedIndex]&#x3D;&quot;5&quot;
+                      [displayMemberPath]&#x3D;&quot;&#x27;name&#x27;&quot;
+                      [selectedValuePath]&#x3D;&quot;&#x27;value&#x27;&quot;
+                      [isEditable]&#x3D;&quot;false&quot;
+        &gt;
+        &lt;/wj-combo-box&gt;
+        &lt;div class&#x3D;&quot;btn-group btn-group-h&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Bold&quot;&gt;
+            &lt;span class&#x3D;&quot;glyphicon glyphicon-bold&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Bold&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Italic&quot;&gt;
+            &lt;span class&#x3D;&quot;glyphicon glyphicon-italic&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Italic&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Underline&quot;&gt;
+            &lt;span class&#x3D;&quot;underline ribbon-icon&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Underline&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Fill Color&quot;&gt;
+            &lt;span class&#x3D;&quot;glyphicon glyphicon-text-background&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Fill&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Font Color&quot;&gt;
+            &lt;span class&#x3D;&quot;glyphicon glyphicon-text-color&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Font&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;panel-footer text-center&quot;&gt;Font&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Alignment Panel --&gt;
+  &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+    &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+      &lt;div class&#x3D;&quot;btn-group-vertical&quot;&gt;
+        &lt;div class&#x3D;&quot;btn-group btn-group-h&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Left&quot;&gt;
+            &lt;span class&#x3D;&quot;glyphicon glyphicon-align-left&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Left&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Center&quot;&gt;
+            &lt;span class&#x3D;&quot;glyphicon glyphicon-align-center&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Center&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Right&quot;&gt;
+            &lt;span class&#x3D;&quot;glyphicon glyphicon-align-right&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Right&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;btn-group btn-group-h&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-small&quot; title&#x3D;&quot;Merge&quot;&gt;
+            &lt;span class&#x3D;&quot;glyphicon glyphicon-th-large&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;text&quot;&gt;Merge&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;panel-footer text-center&quot;&gt;Alignment&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- View Panel --&gt;
+  &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+    &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+      &lt;div class&#x3D;&quot;btn-group&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-large no-border&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-list&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;Unfreeze&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;panel-footer text-center&quot;&gt;View&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Styles Panel --&gt;
+  &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+    &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+      &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-large no-border&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#excelStyle&quot;&gt;
+        &lt;span class&#x3D;&quot;glyphicon glyphicon-pencil&quot;&gt;&lt;/span&gt;
+        &lt;span class&#x3D;&quot;text&quot;&gt;Styles&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;panel-footer text-center&quot;&gt;Styles&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Editing Panel --&gt;
+  &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+    &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+      &lt;div class&#x3D;&quot;btn-group&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-large no-border&quot; data-toggle&#x3D;&quot;modal&quot; data-target&#x3D;&quot;#excelSort&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-sort-by-attributes&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;Sort&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-large no-border&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-filter&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;Filter&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;panel-footer text-center&quot;&gt;Editing&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Charts Panel --&gt;
+  &lt;div class&#x3D;&quot;panel panel-default&quot;&gt;
+    &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+      &lt;div class&#x3D;&quot;btn-group&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-default btn-large no-border&quot;&gt;
+          &lt;span class&#x3D;&quot;glyphicon glyphicon-stats&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;text&quot;&gt;Insert Chart&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;panel-footer text-center&quot;&gt;Charts&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Formula Bar --&gt;
+&lt;div class&#x3D;&quot;row top-boxes&quot;&gt;
+  &lt;div class&#x3D;&quot;col-sm-1 col-xs-2 position&quot;&gt;A1&lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-sm-1 col-xs-2 fn-label text-right&quot;&gt;fx&lt;/div&gt;
+  &lt;!--
+  &lt;div class&#x3D;&quot;col-sm-10 col-xs-8 fn-box&quot;&gt;
+    &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; /&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;col-sm-10 col-xs-8 position-right&quot;&gt;&lt;/div&gt;
+  --&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row ribbon-container">  <!-- File Panel -->  <div class="panel panel-default">    <div class="panel-body">      <div class="btn-group">        <div class="btn btn-default btn-large no-border">          <span class="glyphicon glyphicon-open"></span>          <span class="text">Load</span>          <input type="file" class="upload"          (change)="command({ methodName: \'fileImport\', param1: $event })"          accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel.sheet.macroEnabled.12" />        </div>        <button class="btn btn-default btn-large no-border" (click)="command({ methodName: \'fileSave\' })">          <span class="glyphicon glyphicon-save"></span>          <span class="text">Save</span>        </button>        <button class="btn btn-default btn-large no-border" (click)="command({ methodName: \'fileNew\' })">          <span class="glyphicon glyphicon-file"></span>          <span class="text">New</span>        </button>      </div>    </div>    <div class="panel-footer text-center">File</div>  </div>  <!-- Undo / Redo Panel -->  <div class="panel panel-default">    <div class="panel-body">      <div class="btn-group btn-group-h">        <button type="button" class="btn btn-default btn-small" title="Undo">          <span class="glyphicon glyphicon-share-alt flip"></span>          <span class="text">Undo</span>        </button>        <button type="button" class="btn btn-default btn-small" title="Redo">          <span class="glyphicon glyphicon-share-alt"></span>          <span class="text">Redo</span>        </button>      </div>    </div>    <div class="panel-footer text-center">Undo / Redo</div>  </div>  <!-- Font Panel -->  <div class="panel panel-default">    <div class="panel-body">      <div class="btn-group-vertical">        <wj-combo-box #cboFontName                      style="width:120px"                      [itemsSource]=""                      [selectedIndex]="10"                      [displayMemberPath]="\'name\'"                      [selectedValuePath]="\'value\'"                      [isEditable]="false"        >        </wj-combo-box>        <wj-combo-box #cboFontSize                      style="width:60px"                      [itemsSource]=""                      [selectedIndex]="5"                      [displayMemberPath]="\'name\'"                      [selectedValuePath]="\'value\'"                      [isEditable]="false"        >        </wj-combo-box>        <div class="btn-group btn-group-h">          <button type="button" class="btn btn-default btn-small" title="Bold">            <span class="glyphicon glyphicon-bold"></span>            <span class="text">Bold</span>          </button>          <button type="button" class="btn btn-default btn-small" title="Italic">            <span class="glyphicon glyphicon-italic"></span>            <span class="text">Italic</span>          </button>          <button type="button" class="btn btn-default btn-small" title="Underline">            <span class="underline ribbon-icon"></span>            <span class="text">Underline</span>          </button>          <button type="button" class="btn btn-default btn-small" title="Fill Color">            <span class="glyphicon glyphicon-text-background"></span>            <span class="text">Fill</span>          </button>          <button type="button" class="btn btn-default btn-small" title="Font Color">            <span class="glyphicon glyphicon-text-color"></span>            <span class="text">Font</span>          </button>        </div>      </div>    </div>    <div class="panel-footer text-center">Font</div>  </div>  <!-- Alignment Panel -->  <div class="panel panel-default">    <div class="panel-body">      <div class="btn-group-vertical">        <div class="btn-group btn-group-h">          <button type="button" class="btn btn-default btn-small" title="Left">            <span class="glyphicon glyphicon-align-left"></span>            <span class="text">Left</span>          </button>          <button type="button" class="btn btn-default btn-small" title="Center">            <span class="glyphicon glyphicon-align-center"></span>            <span class="text">Center</span>          </button>          <button type="button" class="btn btn-default btn-small" title="Right">            <span class="glyphicon glyphicon-align-right"></span>            <span class="text">Right</span>          </button>        </div>        <div class="btn-group btn-group-h">          <button type="button" class="btn btn-default btn-small" title="Merge">            <span class="glyphicon glyphicon-th-large"></span>            <span class="text">Merge</span>          </button>        </div>      </div>    </div>    <div class="panel-footer text-center">Alignment</div>  </div>  <!-- View Panel -->  <div class="panel panel-default">    <div class="panel-body">      <div class="btn-group">        <button type="button" class="btn btn-default btn-large no-border">          <span class="glyphicon glyphicon-list"></span>          <span class="text">Unfreeze</span>        </button>      </div>    </div>    <div class="panel-footer text-center">View</div>  </div>  <!-- Styles Panel -->  <div class="panel panel-default">    <div class="panel-body">      <button type="button" class="btn btn-default btn-large no-border" data-toggle="modal" data-target="#excelStyle">        <span class="glyphicon glyphicon-pencil"></span>        <span class="text">Styles</span>      </button>    </div>    <div class="panel-footer text-center">Styles</div>  </div>  <!-- Editing Panel -->  <div class="panel panel-default">    <div class="panel-body">      <div class="btn-group">        <button type="button" class="btn btn-default btn-large no-border" data-toggle="modal" data-target="#excelSort">          <span class="glyphicon glyphicon-sort-by-attributes"></span>          <span class="text">Sort</span>        </button>        <button type="button" class="btn btn-default btn-large no-border">          <span class="glyphicon glyphicon-filter"></span>          <span class="text">Filter</span>        </button>      </div>    </div>    <div class="panel-footer text-center">Editing</div>  </div>  <!-- Charts Panel -->  <div class="panel panel-default">    <div class="panel-body">      <div class="btn-group">        <button type="button" class="btn btn-default btn-large no-border">          <span class="glyphicon glyphicon-stats"></span>          <span class="text">Insert Chart</span>        </button>      </div>    </div>    <div class="panel-footer text-center">Charts</div>  </div></div><!-- Formula Bar --><div class="row top-boxes">  <div class="col-sm-1 col-xs-2 position">A1</div>  <div class="col-sm-1 col-xs-2 fn-label text-right">fx</div>  <!--  <div class="col-sm-10 col-xs-8 fn-box">    <input type="text" class="form-control" />  </div>  <div class="col-sm-10 col-xs-8 position-right"></div>  --></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'RibbonComponent', 'selector': 'app-ribbon'},{'name': 'WorksheetComponent', 'selector': 'app-worksheet'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'RibbonComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

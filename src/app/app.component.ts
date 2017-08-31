@@ -13,19 +13,28 @@ export class AppComponent implements OnInit {
   private worksheet: WorksheetComponent;
 
   public worksheetHeight: number;
-  // public worksheetHeight = 0;
+  private ribbonHeight: number;
 
   ngOnInit() {
-    const ribbonHeight = document.getElementById('ribbon-tabs-container').clientHeight;
-    this.worksheetHeight = window.innerHeight - ribbonHeight;
+    this.ribbonHeight = document.getElementById('ribbon-tabs-container').clientHeight;
+    this.worksheetHeight = window.innerHeight - this.ribbonHeight;
   }
 
+  // @HostListener('window:resize')
   onResize(event) {
-    const ribbonHeight = document.getElementById('ribbon-tabs-container').clientHeight;
-    this.worksheetHeight = event.target.innerHeight - ribbonHeight;
+    this.ribbonHeight = document.getElementById('ribbon-tabs-container').clientHeight;
+    this.worksheetHeight = event.target.innerHeight - this.ribbonHeight;
   }
 
-  ribbonClicked(event) {
+  /**
+   * @param {any} event  Process events emitted by the Ribbon component
+   *
+   * @example
+   * <app-ribbon (ribbonClicked)="ribbonClicked($event)"></app-ribbon>
+   *
+   * @returns {void}
+   */
+  ribbonClicked(event: any) {
 
     const methodName = event.methodName;
 
