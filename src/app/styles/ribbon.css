@@ -1,5 +1,5 @@
 ﻿/**
- * ribbon bars style settings
+ * Ribbon component styles
  */
 .ribbon-container {
 	margin: 0;
@@ -109,7 +109,7 @@
 	background-image: url('../resources/ribbon/Underline_small.png');
 }
 
-input.upload {
+input.load {
 	position: absolute;
 	top: 0;
 	right: 0;
