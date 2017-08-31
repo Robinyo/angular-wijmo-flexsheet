@@ -130,7 +130,7 @@ export class WorksheetComponent {
     return new wjcGrid.DataMap(map, 'key', 'value');
   }
 
-  fileImport(event) {
+  fileLoad(event: any) {
     if (this.flexSheet && event.target.files[0]) {
       this.flexSheet.loadAsync(event.target.files[0]);
       event.target.value = '';
