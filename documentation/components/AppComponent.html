@@ -9,6 +9,7 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	    <link rel="stylesheet" href="../styles/style.css">
+                 <link rel="stylesheet" href="../styles/vagrant.css">
     </head>
     <body>
 
@@ -145,7 +146,7 @@
                     <li class="divider"></li>
                     <li class="copyright">
                             Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
-                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                        <img src="..//images/compodoc-vectorise-inverted.svg" class="img-responsive">
                             </a>
                     </li>
             
@@ -284,7 +285,7 @@
                            <li class="divider"></li>
                            <li class="copyright">
                                    Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
-                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                               <img src="..//images/compodoc-vectorise-inverted.svg" class="img-responsive">
                                    </a>
                            </li>
                    
@@ -388,6 +389,9 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                <span class="modifier">Private</span> <a href="#ribbonHeight">ribbonHeight</a>
+                            </li>
                             <li>
                                 <span class="modifier">Private</span> <a href="#worksheet">worksheet</a>
                             </li>
@@ -567,6 +571,35 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="ribbonHeight"></a>
+                            <b><span class="modifier">Private</span> ribbonHeight</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-lock"></span><code>ribbonHeight:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+    
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/app.component.ts:16</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
                             <a name="worksheet"></a>
                             <b><span class="modifier">Private</span> worksheet</b>
                         </td>
@@ -646,17 +679,17 @@ export class AppComponent implements OnInit {
   private worksheet: WorksheetComponent;
 
   public worksheetHeight: number;
-  // public worksheetHeight &#x3D; 0;
+  private ribbonHeight: number;
 
   ngOnInit() {
-    const ribbonHeight &#x3D; document.getElementById(&#x27;ribbon-tabs-container&#x27;).clientHeight;
-    this.worksheetHeight &#x3D; window.innerHeight - ribbonHeight;
+    this.ribbonHeight &#x3D; document.getElementById(&#x27;ribbon-tabs-container&#x27;).clientHeight;
+    this.worksheetHeight &#x3D; window.innerHeight - this.ribbonHeight;
   }
 
   // @HostListener(&#x27;window:resize&#x27;)
   onResize(event) {
-    const ribbonHeight &#x3D; document.getElementById(&#x27;ribbon-tabs-container&#x27;).clientHeight;
-    this.worksheetHeight &#x3D; event.target.innerHeight - ribbonHeight;
+    this.ribbonHeight &#x3D; document.getElementById(&#x27;ribbon-tabs-container&#x27;).clientHeight;
+    this.worksheetHeight &#x3D; event.target.innerHeight - this.ribbonHeight;
   }
 
   /**
@@ -672,26 +705,17 @@ export class AppComponent implements OnInit {
     const methodName &#x3D; event.methodName;
 
     if (this.worksheet[methodName]) {
-      // if (event.param1) {
-      if (event.hasOwnProperty(&#x27;param1&#x27;)) {
+      if (event.hasOwnProperty(&#x27;param1&#x27;)) {  // if (event.param1) {
         const param1 &#x3D; event.param1;
-        console.log(&#x27;app.component -&gt; action: &#x27; + methodName + &#x27; param1: &#x27; + param1);
+        // console.log(&#x27;app.component -&gt; action: &#x27; + methodName + &#x27; param1: &#x27; + param1);
         this.worksheet[methodName](param1);
       } else {
-        console.log(&#x27;app.component -&gt; action: &#x27; + methodName);
+        // console.log(&#x27;app.component -&gt; action: &#x27; + methodName);
         this.worksheet[methodName]();
       }
     }
   }
 }
-
-// https://learnxinyminutes.com/docs/typescript/
-
-// https://stackoverflow.com/questions/39300526/how-i-can-detect-window-resize-instantly-in-angular-2
-// https://stackoverflow.com/questions/43835211/angular-2-dynamically-set-css-width-of-element-based-on-available-real-estate
-// https://stackoverflow.com/questions/35882670/dynamically-updating-css-in-angular-2
-
-// console.log(&#x27;worksheetHeight: &#x27; + this.worksheetHeight);
 </code></pre>
     </div>
 

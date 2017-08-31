@@ -9,6 +9,7 @@
 
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 	    <link rel="stylesheet" href="./styles/style.css">
+                 <link rel="stylesheet" href="./styles/vagrant.css">
     </head>
     <body>
 
@@ -145,7 +146,7 @@
                     <li class="divider"></li>
                     <li class="copyright">
                             Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
-                                        <img src=".//images/compodoc-vectorise.svg" class="img-responsive">
+                                        <img src=".//images/compodoc-vectorise-inverted.svg" class="img-responsive">
                             </a>
                     </li>
             
@@ -284,7 +285,7 @@
                            <li class="divider"></li>
                            <li class="copyright">
                                    Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
-                                               <img src=".//images/compodoc-vectorise.svg" class="img-responsive">
+                                               <img src=".//images/compodoc-vectorise-inverted.svg" class="img-responsive">
                                    </a>
                            </li>
                    
@@ -309,7 +310,12 @@
 <h2 id="running-end-to-end-tests">Running end-to-end tests</h2>
 <p>Run <code>ng e2e</code> to execute the end-to-end tests via <a href="http://www.protractortest.org/">Protractor</a>.
 Before running the tests make sure you are serving the app via <code>ng serve</code>.</p>
-<h2 id="further-help">Further help</h2>
+<h2 id="documentation">Documentation</h2>
+<p>Run <code>npm run compodoc</code> to generate documentation (using Compodoc) in the <code>/documentation</code> directory.</p>
+<p>We can use Python&#39;s SimpleHTTPServer to serve the files in the <code>/documentation</code> directory:</p>
+<pre class="line-numbers"><code class="language-none">cd documentation
+python -m SimpleHTTPServer 8080</code></pre><p>Open your browser and navigate to:</p>
+<pre class="line-numbers"><code class="language-none">http://localhost:8080</code></pre><h2 id="further-help">Further help</h2>
 <p>To get more help on the Angular CLI use <code>ng help</code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md">Angular CLI README</a>.</p>
 
 

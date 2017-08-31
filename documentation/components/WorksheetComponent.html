@@ -9,6 +9,7 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	    <link rel="stylesheet" href="../styles/style.css">
+                 <link rel="stylesheet" href="../styles/vagrant.css">
     </head>
     <body>
 
@@ -145,7 +146,7 @@
                     <li class="divider"></li>
                     <li class="copyright">
                             Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
-                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                        <img src="..//images/compodoc-vectorise-inverted.svg" class="img-responsive">
                             </a>
                     </li>
             
@@ -284,7 +285,7 @@
                            <li class="divider"></li>
                            <li class="copyright">
                                    Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
-                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                               <img src="..//images/compodoc-vectorise-inverted.svg" class="img-responsive">
                                    </a>
                            </li>
                    
@@ -421,7 +422,7 @@
                                 <span class="modifier">Private</span> <a href="#_updateSelection">_updateSelection</a>
                             </li>
                             <li>
-                                 <a href="#fileImport">fileImport</a>
+                                 <a href="#fileLoad">fileLoad</a>
                             </li>
                             <li>
                                  <a href="#fileNew">fileNew</a>
@@ -568,13 +569,13 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <a name="fileImport"></a>
-                            <b> fileImport</b>
+                            <a name="fileLoad"></a>
+                            <b> fileLoad</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-    <code>fileImport(event: )</code>
+    <code>fileLoad(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                         </td>
                     </tr>
     
@@ -1002,7 +1003,7 @@ export class WorksheetComponent {
     return new wjcGrid.DataMap(map, &#x27;key&#x27;, &#x27;value&#x27;);
   }
 
-  fileImport(event) {
+  fileLoad(event: any) {
     if (this.flexSheet &amp;&amp; event.target.files[0]) {
       this.flexSheet.loadAsync(event.target.files[0]);
       event.target.value &#x3D; &#x27;&#x27;;
@@ -1026,11 +1027,10 @@ export class WorksheetComponent {
 
     <div class="tab-pane fade" id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;wj-flex-sheet #flexSheet (initialized)&#x3D;&quot;flexSheetInit(flexSheet)&quot;&gt;
-  &lt;wj-sheet name&#x3D;&quot;Sheet 1&quot;&gt;&lt;/wj-sheet&gt;
-  &lt;wj-sheet name&#x3D;&quot;Sheet 2&quot;&gt;&lt;/wj-sheet&gt;
-  &lt;wj-sheet name&#x3D;&quot;Sheet 3&quot;&gt;&lt;/wj-sheet&gt;
+  &lt;wj-sheet name&#x3D;&quot;Country&quot;&gt;&lt;/wj-sheet&gt;
+  &lt;wj-sheet name&#x3D;&quot;Report&quot;&gt;&lt;/wj-sheet&gt;
+  &lt;wj-sheet name&#x3D;&quot;Formulas&quot;&gt;&lt;/wj-sheet&gt;
 &lt;/wj-flex-sheet&gt;
-
 </code></pre>
     </div>
 
@@ -1057,7 +1057,7 @@ export class WorksheetComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><wj-flex-sheet #flexSheet (initialized)="flexSheetInit(flexSheet)">  <wj-sheet name="Sheet 1"></wj-sheet>  <wj-sheet name="Sheet 2"></wj-sheet>  <wj-sheet name="Sheet 3"></wj-sheet></wj-flex-sheet></div>'
+        var COMPONENT_TEMPLATE = '<div><wj-flex-sheet #flexSheet (initialized)="flexSheetInit(flexSheet)">  <wj-sheet name="Country"></wj-sheet>  <wj-sheet name="Report"></wj-sheet>  <wj-sheet name="Formulas"></wj-sheet></wj-flex-sheet></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'RibbonComponent', 'selector': 'app-ribbon'},{'name': 'WorksheetComponent', 'selector': 'app-worksheet'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'WorksheetComponent'};

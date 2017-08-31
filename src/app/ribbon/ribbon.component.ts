@@ -13,7 +13,7 @@ export class RibbonComponent {
    * @param {any} action  The action to process
    *
    * @example
-   * (click)="command({ methodName: 'fileNew' })"
+   * <button class="btn btn-default btn-large no-border" (click)="command({ methodName: 'fileNew' })">
    *
    * @returns {void}
    */
