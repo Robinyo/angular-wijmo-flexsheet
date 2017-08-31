@@ -18,10 +18,7 @@ export class RibbonComponent {
    * @returns {void}
    */
   command(action: any) {
-
-    console.log('ribbon.component -> action: ' + action);
-
-    // The Ribbon (child) component emits events when clicked
+    // console.log('ribbon.component -> action: ' + action);
     this.ribbonClicked.emit(action);
   }
 }
