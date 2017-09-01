@@ -10,8 +10,8 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class RibbonComponent implements OnDestroy {
 
-  subscription: Subscription;
-  selectionFormatState: any = {};
+  private subscription: Subscription;
+  private selectionFormatState: any = {};
 
   @Output() ribbonClicked = new EventEmitter<any>();
 

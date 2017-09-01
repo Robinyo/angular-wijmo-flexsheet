@@ -13,7 +13,8 @@ import { CountryService } from '../services/country.service';
 })
 export class WorksheetComponent {
 
-  @ViewChild('flexSheet') flexSheet: wjcGridSheet.FlexSheet;
+  @ViewChild('flexSheet')
+  private flexSheet: wjcGridSheet.FlexSheet;
 
   data: any[];
   // undoStack: wjcGridSheet.UndoStack;
