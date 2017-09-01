@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class DataService {
+export class CountryService {
 
   private _products = ['Widget', 'Gadget', 'Doohickey'];
   private _countries = ['US', 'Germany', 'UK', 'Japan', 'Italy', 'Greece'];

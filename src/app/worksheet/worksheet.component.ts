@@ -1,9 +1,10 @@
 import * as wjcGridSheet from 'wijmo/wijmo.grid.sheet';
 import * as wjcGrid from 'wijmo/wijmo.grid';
 
-import { Component, Inject, ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
-import { DataService } from '../services/data.service';
+import { WorksheetService } from '../services/worksheet.service';
+import { CountryService } from '../services/country.service';
 
 @Component({
   selector: 'app-worksheet',
@@ -14,10 +15,9 @@ export class WorksheetComponent {
 
   @ViewChild('flexSheet') flexSheet: wjcGridSheet.FlexSheet;
 
-  protected dataSvc: DataService;
   data: any[];
   // undoStack: wjcGridSheet.UndoStack;
-  selectionFormatState: wjcGridSheet.IFormatState;
+  selectionFormatState: wjcGridSheet.IFormatState = {};
 
   selection: any = {
     content: '',
@@ -27,11 +27,11 @@ export class WorksheetComponent {
   };
   private _updatingSelection = false;
 
-  constructor(@Inject(DataService) dataSvc: DataService) {
-    this.dataSvc = dataSvc;
-    this.data = dataSvc.getData(49);
+  constructor(private worksheetService: WorksheetService,
+              private countryService: CountryService) {
 
-    this.selectionFormatState = {};
+    // this.selectionFormatState = {};
+    this.data = this.countryService.getData(49);
   }
 
   flexSheetInit(flexSheet: wjcGridSheet.FlexSheet) {
@@ -47,7 +47,36 @@ export class WorksheetComponent {
       flexSheet.selectionChanged.addHandler((sender: any, args: wjcGrid.CellRangeEventArgs) => {
         self._updateSelection(args.range);
         self.selectionFormatState = flexSheet.getSelectionFormatState();
+
+        this.worksheetService.setState(self.selectionFormatState);
       });
+    }
+  }
+
+  applyBoldStyle() {
+    if (this.flexSheet) {
+      this.flexSheet.applyCellsStyle({ fontWeight: this.selectionFormatState.isBold ? 'none' : 'bold' });
+      this.selectionFormatState.isBold = !this.selectionFormatState.isBold;
+
+      this.worksheetService.setState(this.selectionFormatState);
+    }
+  }
+
+  applyItalicStyle() {
+    if (this.flexSheet) {
+      this.flexSheet.applyCellsStyle({ fontStyle: this.selectionFormatState.isItalic ? 'none' : 'italic' });
+      this.selectionFormatState.isItalic = !this.selectionFormatState.isItalic;
+
+      this.worksheetService.setState(this.selectionFormatState);
+    }
+  }
+
+  applyUnderlineStyle() {
+    if (this.flexSheet) {
+      this.flexSheet.applyCellsStyle({ textDecoration: this.selectionFormatState.isUnderline ? 'none' : 'underline' });
+      this.selectionFormatState.isUnderline = !this.selectionFormatState.isUnderline;
+
+      this.worksheetService.setState(this.selectionFormatState);
     }
   }
 
@@ -58,11 +87,11 @@ export class WorksheetComponent {
     if (flexSheet) {
       column = flexSheet.columns.getColumn('countryId');
       if (column && !column.dataMap) {
-        column.dataMap = this._buildDataMap(this.dataSvc.countries);
+        column.dataMap = this._buildDataMap(this.countryService.countries);
       }
       column = flexSheet.columns.getColumn('productId');
       if (column && !column.dataMap) {
-        column.dataMap = this._buildDataMap(this.dataSvc.products);
+        column.dataMap = this._buildDataMap(this.countryService.products);
       }
     }
   }

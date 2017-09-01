@@ -5,7 +5,8 @@ import { WjGridSheetModule } from 'wijmo/wijmo.angular2.grid.sheet';
 
 import { WorksheetComponent } from './worksheet.component';
 
-import { DataService } from '../services/data.service';
+// import { WorksheetService } from '../services/worksheet.service';
+import { CountryService } from '../services/country.service';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import { DataService } from '../services/data.service';
     WjGridSheetModule
   ],
   declarations: [ WorksheetComponent ],
-  providers: [ DataService ],
+  providers: [ CountryService ],
   exports: [ WorksheetComponent ]
 })
 export class WorksheetModule { }

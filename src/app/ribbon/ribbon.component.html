@@ -64,15 +64,18 @@
         >
         </wj-combo-box>
         <div class="btn-group btn-group-h">
-          <button type="button" class="btn btn-default btn-small" title="Bold">
+          <button type="button" class="btn btn-default btn-small {{selectionFormatState.isBold ? 'active' : ''}}"
+                  title="Bold" (click)="command({ methodName: 'applyBoldStyle' })">
             <span class="glyphicon glyphicon-bold"></span>
             <span class="text">Bold</span>
           </button>
-          <button type="button" class="btn btn-default btn-small" title="Italic">
+          <button type="button" class="btn btn-default btn-small {{selectionFormatState.isItalic ? 'active' : ''}}"
+                  title="Italic" (click)="command({ methodName: 'applyItalicStyle' })">
             <span class="glyphicon glyphicon-italic"></span>
             <span class="text">Italic</span>
           </button>
-          <button type="button" class="btn btn-default btn-small" title="Underline">
+          <button type="button" class="btn btn-default btn-small {{selectionFormatState.isUnderline ? 'active' : ''}}"
+                  title="Underline" (click)="command({ methodName: 'applyUnderlineStyle' })">
             <span class="underline ribbon-icon"></span>
             <span class="text">Underline</span>
           </button>

@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { RibbonModule } from './ribbon/ribbon.module';
 import { WorksheetModule } from './worksheet/worksheet.module';
 
+import { WorksheetService } from './services/worksheet.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +19,7 @@ import { WorksheetModule } from './worksheet/worksheet.module';
     RibbonModule,
     WorksheetModule
   ],
-  providers: [],
+  providers: [ WorksheetService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
