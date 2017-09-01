@@ -29,8 +29,6 @@ export class WorksheetComponent {
 
   constructor(private worksheetService: WorksheetService,
               private countryService: CountryService) {
-
-    // this.selectionFormatState = {};
     this.data = this.countryService.getData(49);
   }
 
@@ -41,7 +39,7 @@ export class WorksheetComponent {
       flexSheet.deferUpdate(() => {
         flexSheet.selectedSheetIndex = 0;
         flexSheet.selectedSheet.itemsSource = this.data;
-        self._initDataMapForBindingSheet(flexSheet);
+        this._initDataMapForBindingSheet(flexSheet);
       });
 
       flexSheet.selectionChanged.addHandler((sender: any, args: wjcGrid.CellRangeEventArgs) => {

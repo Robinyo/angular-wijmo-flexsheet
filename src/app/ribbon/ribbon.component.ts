@@ -11,14 +11,11 @@ import { Subscription } from 'rxjs/Subscription';
 export class RibbonComponent implements OnDestroy {
 
   subscription: Subscription;
-  selectionFormatState: any;
+  selectionFormatState: any = {};
 
   @Output() ribbonClicked = new EventEmitter<any>();
 
   constructor(private worksheetService: WorksheetService) {
-
-    this.selectionFormatState = {};
-
     this.subscription = this.worksheetService.getState().subscribe(
       selectionFormatState => {
         this.selectionFormatState = selectionFormatState;

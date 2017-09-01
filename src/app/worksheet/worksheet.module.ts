@@ -5,7 +5,6 @@ import { WjGridSheetModule } from 'wijmo/wijmo.angular2.grid.sheet';
 
 import { WorksheetComponent } from './worksheet.component';
 
-// import { WorksheetService } from '../services/worksheet.service';
 import { CountryService } from '../services/country.service';
 
 @NgModule({
