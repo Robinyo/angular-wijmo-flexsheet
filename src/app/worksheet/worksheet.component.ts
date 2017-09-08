@@ -1,7 +1,17 @@
+/**
+ * The WjFlexSheet is the Angular 2 component for the FlexSheet control.
+ *
+ * See: http://wijmo.com/5/docs/topic/wijmo-wijmo.angular2.grid.sheet.WjFlexSheet.Class.html
+ *
+ * Note: Use the wj-flex-sheet component to add FlexSheet controls to your Angular 2 applications.
+ *       The WjFlexSheet component is derived from the FlexSheet control and inherits all its
+ *       properties, events and methods. The wj-flex-sheet component may contain a WjSheet child component.
+ */
+
 import * as wjcGridSheet from 'wijmo/wijmo.grid.sheet';
 import * as wjcGrid from 'wijmo/wijmo.grid';
 
-import { Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 
 import { WorksheetService } from '../services/worksheet.service';
 import { CountryService } from '../services/country.service';
@@ -11,12 +21,12 @@ import { CountryService } from '../services/country.service';
   templateUrl: './worksheet.component.html',
   styleUrls: ['./worksheet.component.css']
 })
-export class WorksheetComponent {
+export class WorksheetComponent implements AfterViewInit {
 
   @ViewChild('flexSheet')
   private flexSheet: wjcGridSheet.FlexSheet;
 
-  data: any[];
+  private data: any[];
   // undoStack: wjcGridSheet.UndoStack;
   selectionFormatState: wjcGridSheet.IFormatState = {};
 
@@ -32,6 +42,25 @@ export class WorksheetComponent {
               private countryService: CountryService) {
     this.data = this.countryService.getData(49);
   }
+
+  ngAfterViewInit() {
+
+    const self = this;
+
+    this.flexSheet.deferUpdate(() => {
+      this.flexSheet.selectedSheetIndex = 0;
+      // this.flexSheet.selectedSheet.itemsSource = this.data;
+      // this._initDataMapForBindingSheet(this.flexSheet);
+    });
+
+    this.flexSheet.selectionChanged.addHandler((sender: any, args: wjcGrid.CellRangeEventArgs) => {
+      self._updateSelection(args.range);
+      self.selectionFormatState = self.flexSheet.getSelectionFormatState();
+      self.worksheetService.setState(self.selectionFormatState);
+    });
+  }
+
+  /*
 
   flexSheetInit(flexSheet: wjcGridSheet.FlexSheet) {
     const self = this;
@@ -51,6 +80,8 @@ export class WorksheetComponent {
       });
     }
   }
+
+  */
 
   applyBoldStyle() {
     if (this.flexSheet) {

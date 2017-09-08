@@ -11,7 +11,7 @@ import { Subscription } from 'rxjs/Subscription';
 export class RibbonComponent implements OnDestroy {
 
   private subscription: Subscription;
-  private selectionFormatState: any = {};
+  selectionFormatState: any = {};
 
   @Output() ribbonClicked = new EventEmitter<any>();
 
@@ -39,4 +39,16 @@ export class RibbonComponent implements OnDestroy {
     // console.log('ribbon.component -> action: ' + action);
     this.ribbonClicked.emit(action);
   }
+
+  windowOpen() {
+    const params = 'width=300,height=400,left=100,top=100';
+    window.open('/palette', 'FloatingToolbar', params);
+  }
 }
+
+/*
+
+    const params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=300,height=400,left=100,top=100`;
+    window.open('/palette', 'FloatingToolbar', params);
+
+ */
