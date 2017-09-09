@@ -32,3 +32,13 @@ See: flex-sheet/palette.component.css
   background-color: #0085c7;
   color: #fff;
 }
+
+.wj-flexsheet .wj-state-multi-selected {
+  background-color: #0085c7;
+  color: #fff;
+}
+
+.wj-flexsheet .wj-cell.wj-state-multi-selected {
+  border-right: none;
+  border-bottom: none;
+}
