@@ -37,9 +37,4 @@ const routes: Routes = [
   providers: [ { provide: LoggerService, useClass: ConsoleLoggerService } ],
   bootstrap: [ AppComponent ]
 })
-export class AppModule {
-
-  constructor(private logger: LoggerService) {
-    logger.info('AppModule initialised');
-  }
-}
+export class AppModule {}

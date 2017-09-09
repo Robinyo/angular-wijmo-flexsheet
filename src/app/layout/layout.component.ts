@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
+import { LoggerService } from '../services/log4ts/logger.service';
+
 import { WorksheetComponent } from '../worksheet/worksheet.component';
 
 @Component({
@@ -14,6 +16,10 @@ export class LayoutComponent implements OnInit {
 
   public worksheetHeight: number;
   private ribbonHeight: number;
+
+  constructor(private logger: LoggerService) {
+    logger.info('LayoutComponent: logger.info');
+  };
 
   ngOnInit() {
     this.ribbonHeight = document.getElementById('ribbon-tabs-container').clientHeight;

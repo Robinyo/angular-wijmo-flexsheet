@@ -1,6 +1,10 @@
+import { Injectable } from '@angular/core';
 import { isDevMode } from '@angular/core';
 
-export class ConsoleLoggerService {
+import { ILogger } from './logger.service';
+
+@Injectable()
+export class ConsoleLoggerService implements ILogger {
 
   get info() {
     if (isDevMode()) {
