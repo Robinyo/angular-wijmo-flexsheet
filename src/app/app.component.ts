@@ -11,8 +11,8 @@ import { LoggerService } from './services/log4ts/logger.service';
 export class AppComponent {
 
   constructor(private router: Router, private logger: LoggerService) {
-    logger.info('AppComponent: logger.info');
-    logger.warn('AppComponent: logger.warn');
-    logger.error('AppComponent: logger.error');
+    logger.info('AppComponent: logger.info()');
+    logger.warn('AppComponent: logger.warn()');
+    logger.error('AppComponent: logger.error()');
   };
 }

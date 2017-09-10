@@ -1,41 +1,36 @@
 import { Injectable } from '@angular/core';
-import { isDevMode } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
-import { ILogger } from './logger.service';
+import { Logger } from './logger.service';
+
+export let isDebugMode = environment.isDebugMode;
+
+const noop = (): any => undefined;
 
 @Injectable()
-export class ConsoleLoggerService implements ILogger {
+export class ConsoleLoggerService implements Logger {
 
   get info() {
-    if (isDevMode()) {
+    if (isDebugMode) {
       return console.info.bind(console);
     } else {
-      return () => {};
+      return noop;
     }
   }
 
   get warn() {
-    if (isDevMode()) {
+    if (isDebugMode) {
       return console.warn.bind(console);
     } else {
-      return () => {};
+      return noop;
     }
   }
 
   get error() {
-    if (isDevMode()) {
+    if (isDebugMode) {
       return console.error.bind(console);
     } else {
-      return () => {};
+      return noop;
     }
   }
-
-  /*
-  public logFromLoggerService( msg: any ): void {
-    ( console && console.info ) && console.info( msg );
-  }
-  */
 }
-
-
-
