@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 
-const noop = (): any => undefined;
-
 export abstract class Logger {
 
   info: any;
@@ -15,11 +13,9 @@ export class LoggerService implements Logger {
   info: any;
   warn: any;
   error: any;
-
-  invokeConsoleMethod(type: string, args?: any): void {}
 }
 
-/*
+const noop = (): any => undefined;
 
 @Injectable()
 export class NoOpLogger implements Logger {
@@ -36,8 +32,6 @@ export class NoOpLogger implements Logger {
     return noop;
   }
 }
-
-*/
 
 // The set of built-in Log4j levels includes TRACE, DEBUG, INFO, WARN, ERROR, and FATAL.
 
