@@ -7,6 +7,14 @@ export abstract class Logger {
   error: any;
 }
 
+@Injectable()
+export class LoggerService implements Logger {
+
+  info: any;
+  warn: any;
+  error: any;
+}
+
 const noop = (): any => undefined;
 
 @Injectable()
@@ -23,14 +31,6 @@ export class NoOpLogger implements Logger {
   get error() {
     return noop;
   }
-}
-
-@Injectable()
-export class LoggerService implements Logger {
-
-  info: any;
-  warn: any;
-  error: any;
 }
 
 // The set of built-in Log4j levels includes TRACE, DEBUG, INFO, WARN, ERROR, and FATAL.
