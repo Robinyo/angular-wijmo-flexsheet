@@ -1,20 +1,40 @@
 # Excel-like Worksheet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
+A sample Angular project that uses the wijmo FlexSheet component:
 
 ![angular-ng-bootstrap screenshot](https://github.com/Robinyo/angular-wijmo-flexsheet/blob/master/excel-like-worksheet-with-ribbon.png)
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To clone the project:
 
-## Code scaffolding
+    git clone https://github.com/Robinyo/angular-wijmo-flexsheet.git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+To install the project's dependencies:
 
-## Build
+    cd angular-wijmo-flexsheet
+    npm install
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+The wijmo FlexSheet download includes npm images of the Wijmo external modules in the /NpmImages folder. 
+We can add wijmo to our project using npm:
+
+    npm install --save ~/downloads/wijmo-5-enterprise/NpmImages/wijmo-amd-min
+
+To build the project:
+
+    ng build
+
+**Note:** The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+To launch the project:
+
+    ng serve
+
+Then navigate to:
+ 
+    http://localhost:4200/
+     
+**Note:** The app will automatically reload if you change any of the source files.
 
 ## Running unit tests
 
@@ -24,6 +44,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
+
+## Scaffolding
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
 ## Documentation
 
@@ -42,6 +68,9 @@ http://localhost:8080
 
 ``` 
 
-## Further help
+## Resources 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Blog Posts 
+* Rob Ferguson's blog: [Angular CLI, Angular 4 and wijmo's FlexSheet](https://robferguson.org/blog/2017/08/28/angular-cli-angular-4-and-wijmo-flexsheet/)
+* Rob Ferguson's blog: [Angular 4 and Sibling Component Interaction](https://robferguson.org/blog/2017/08/31/angular-4-and-sibling-component-interaction/)
+* Rob Ferguson's blog: [A simple logging service for Angular 4FlexSheet](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
