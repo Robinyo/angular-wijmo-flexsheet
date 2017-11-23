@@ -16,7 +16,7 @@ To install the project's dependencies:
     npm install
 
 The wijmo FlexSheet [download](https://www.grapecity.com/en/wijmo-flexsheet) includes npm images of the Wijmo external 
-modules in the /NpmImages folder. We can add wijmo to our project using npm:
+modules in the `/NpmImages` folder. You can add wijmo to your project using npm:
 
     npm install --save ~/downloads/wijmo-5-enterprise/NpmImages/wijmo-amd-min
 
