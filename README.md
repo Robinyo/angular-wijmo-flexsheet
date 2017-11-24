@@ -73,4 +73,4 @@ http://localhost:8080
 ## Blog Posts 
 * Rob Ferguson's blog: [Angular CLI, Angular 4 and wijmo's FlexSheet](https://robferguson.org/blog/2017/08/28/angular-cli-angular-4-and-wijmo-flexsheet/)
 * Rob Ferguson's blog: [Angular 4 and Sibling Component Interaction](https://robferguson.org/blog/2017/08/31/angular-4-and-sibling-component-interaction/)
-* Rob Ferguson's blog: [A simple logging service for Angular 4FlexSheet](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
+* Rob Ferguson's blog: [A simple logging service for Angular 4](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
